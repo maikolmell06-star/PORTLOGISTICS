@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortLogistics Academy | Gestión Portuaria</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><i class="fas fa-ship"></i> PORT<span>LOGISTICS</span></div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#modulos">Programa</a></li>
+        </ul>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Logística Portuaria Profesional</h1>
+            <p>Formación técnica en normativa, operaciones, terminales y tipos de carga.</p>
+            <a href="#modulos" class="btn-main">Explorar Módulos</a>
+        </div>
+    </header>
+
+    <main id="modulos" class="container">
+        <h2 class="section-title">Estructura del Programa</h2>
+        <div class="grid-modulos">
+            
+            <div class="card">
+                <div class="card-img m1"></div>
+                <div class="card-body">
+                    <span class="tag">Módulo 1</span>
+                    <h3>Normativa y Actores</h3>
+                    <p>Ley 1 de 1991, DIMAR, DIAN y autoridades portuarias.</p>
+                    <button class="btn-open" data-target="modal-m1">Ver Detalles</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img m2"></div>
+                <div class="card-body">
+                    <span class="tag">Módulo 2</span>
+                    <h3>Operaciones y Estiba</h3>
+                    <p>Infraestructura, Equipos STS/RTG, Estiba y Estabilidad.</p>
+                    <button class="btn-open" data-target="modal-m2">Ver Detalles</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img m3"></div>
+                <div class="card-body">
+                    <span class="tag">Módulo 3</span>
+                    <h3>Terminales y Almacenamiento</h3>
+                    <p>Gestión de patios, almacenamiento y logística interna.</p>
+                    <button class="btn-open" data-target="modal-m3">Ver Detalles</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img m4"></div>
+                <div class="card-body">
+                    <span class="tag">Módulo 4</span>
+                    <h3>Cargas y Contenedores</h3>
+                    <p>Tipos de carga, mercancías peligrosas y clasificación ISO.</p>
+                    <button class="btn-open" data-target="modal-m4">Ver Detalles</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img m6"></div>
+                <div class="card-body">
+                    <span class="tag">Módulo 6</span>
+                    <h3>Gestión y Tecnología</h3>
+                    <p>KPIs operativos, Blockchain y transformación digital.</p>
+                    <button class="btn-open" data-target="modal-m6">Ver Detalles</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="modal-m1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 class="modal-title">Módulo 1: Marco Legal</h2>
+            <div class="modal-body">
+                <h3>Contexto Normativo Colombiano</h3>
+                <div class="download-box">
+                    <a href="materiales/modulo1/introduccion.pdf" class="btn-dl pdf" target="_blank">PDF: Introduccion </a>
+                    <a href="materiales/modulo1/actores.pdf" class="btn-dl pdf" target="_blank">PDF: Actores</a>
+                </div>
+                <div class="video-frame">
+                    <iframe src="https://www.youtube.com/embed/vJMNw2Fxyhw" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-m2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 class="modal-title">Módulo 2: Infraestructura y Equipos</h2>
+            <div class="modal-body">
+                <table class="data-table">
+                    <thead><tr><th>Concepto</th><th>Definición</th></tr></thead>
+                    <tbody>
+                        <tr><td><strong>STS / RTG</strong></td><td>Grúas de muelle y patio.</td></tr>
+                        <tr><td><strong>Lashing</strong></td><td>Trincado de carga.</td></tr>
+                    </tbody>
+                </table>
+                <div class="download-box">
+                    <a href="materiales/modulo2/guia-infraestructura.pdf" class="btn-dl" target="_blank">Checklist Equipos</a>
+                    <a href="materiales/modulo2/manual-equipos.pdf" class="btn-dl" target="_blank">Equipos</a>
+                    <a href="materiales/modulo2/plano-estibas.pdf" class="btn-dl" target="_blank">Guía de Estiba</a>
+                </div>
+                <div class="video-frame">
+                    <iframe src="https://youtube.com/embed/2gd0QSIIMwc" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-m3" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 class="modal-title">Módulo 3: Terminales y Almacenamiento</h2>
+            <div class="modal-body">
+                <div class="download-box">
+                    <a href="materiales/modulo3/guia_orientacion.pdf" class="btn-dl pdf" target="_blank">Guía de Orientación</a>
+                    <a href="materiales/modulo3/guia_educativa.pdf" class="btn-dl pdf" target="_blank">Guía Educativa</a>
+                </div>
+                <div class="video-frame">
+                    <iframe src="https://www.youtube.com/embed/x1pcLJ1e_EM" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-m4" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 class="modal-title">Módulo 4: Cargas Portuarias y Contenedores</h2>
+            <div class="modal-body">
+                <h3>Clasificación y Manejo de Mercancías</h3>
+                <p>Identificación de los diferentes tipos de carga (General, Granel, Fraccionada), protocolos para cargas peligrosas (IMO) y estandarización de contenedores ISO.</p>
+                
+                <div class="download-box">
+                    <a href="materiales/modulo4/tipos_cargas.pdf" class="btn-dl pdf" target="_blank">Tipos de Cargas</a>
+                    <a href="materiales/modulo4/cargaspeligrosas.pdf" class="btn-dl pdf" target="_blank">Cargas Peligrosas</a>
+                    <a href="materiales/modulo4/clasificacion_contenedores.pdf" class="btn-dl pdf" target="_blank">Guía de Contenedores</a>
+                </div>
+
+                <div class="video-frame">
+                    <iframe src="https://www.youtube.com/embed/1sIPLeu_Yag" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-m6" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 class="modal-title">Módulo 6: Gestión y Tecnología</h2>
+            <div class="modal-body">
+                <div class="download-box">
+                    <a href="materiales/modulo6/kpis.pdf" class="btn-dl pdf" target="_blank">Diccionario KPIs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 PortLogistics Academy | Educación de Clase Mundial</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
