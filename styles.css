@@ -20,15 +20,13 @@ body { font-family: 'Inter', sans-serif; margin: 0; background-color: var(--bg);
 
 .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: 0.3s; }
 .card:hover { transform: translateY(-10px); }
-.card-img { height: 160px; background-size: cover; background-position: center; background-color: #eee; }
+.card-img { height: 160px; background-size: cover; background-position: center; }
 
-/* Imágenes de las tarjetas */
-.m1 { background-image: url('modulo1.png'); }
-.m2 { background-image: url('modulo2.png'); }
-.m3 { background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=400&q=60'); }
-/* Imagen para Módulo 4: He puesto una de contenedores de Unsplash, puedes cambiarla por una local */
-.m4 { background-image: url('modulo4.png'); }
-.m6 { background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=60'); }
+/* Imágenes locales .jpg */
+.m1 { background-image: url('modulo1.jpg'); }
+.m2 { background-image: url('modulo2.jpg'); }
+.m3 { background-image: url('modulo3.jpg'); }
+.m4 { background-image: url('modulo4.jpg'); }
 
 .card-body { padding: 20px; }
 .tag { background: #e0f2fe; color: var(--accent); padding: 4px 10px; font-size: 11px; font-weight: bold; border-radius: 4px; text-transform: uppercase; }
@@ -36,19 +34,16 @@ body { font-family: 'Inter', sans-serif; margin: 0; background-color: var(--bg);
 .btn-open:hover { background: var(--accent); color: white; }
 
 .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 2000; overflow-y: auto; }
-.modal-content { background: white; width: 90%; max-width: 700px; margin: 50px auto; padding: 30px; border-radius: 15px; position: relative; }
+.modal-content { background: white; width: 90%; max-width: 800px; margin: 50px auto; padding: 30px; border-radius: 15px; position: relative; }
 .close-btn { position: absolute; right: 20px; top: 10px; font-size: 35px; cursor: pointer; color: #666; }
 .modal-title { border-bottom: 4px solid var(--accent); display: inline-block; margin-bottom: 20px; color: var(--primary); }
 
-.download-box { display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap; }
-.btn-dl { flex: 1; min-width: 200px; padding: 12px; background: #f0f0f0; text-align: center; text-decoration: none; color: #333; border-radius: 6px; font-weight: bold; transition: 0.3s; }
-.btn-dl.pdf { background: #e63946; color: white; }
-
-.data-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-.data-table th, .data-table td { border: 1px solid #ddd; padding: 12px; text-align: left; }
-.data-table th { background: var(--primary); color: white; }
-
-.video-frame { position: relative; padding-bottom: 56.25%; height: 0; margin-top: 25px; border-radius: 10px; overflow: hidden; }
+.download-box { display: flex; gap: 10px; margin-bottom: 20px; }
+.btn-dl.pdf { background: #e63946; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-weight: bold; }
+.video-frame { position: relative; padding-bottom: 56.25%; height: 0; margin-bottom: 30px; border-radius: 10px; overflow: hidden; background: #000; }
 .video-frame iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.presentation-section { margin-top: 30px; padding-top: 20px; border-top: 2px solid #eee; }
+.presentation-container { background: #000; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
 
 footer { background: var(--primary); color: white; text-align: center; padding: 30px; margin-top: 50px; }
